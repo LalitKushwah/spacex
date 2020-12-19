@@ -1,0 +1,29 @@
+<div class="details-card card">
+  <div>
+    <img 
+      [src]="imgSrc" 
+      width="250px"
+      height="250px"
+      alt="img not available on api" 
+      class="mission-image" />
+  </div>
+  <div class="mission-name-flight-number">
+    {{details.mission_name}} #{{details.flight_number}}
+  </div>
+  <div class="detail-label">
+    Launch Year:
+    <span class="detail-value">{{details.launch_year}}</span>
+  </div>
+  <div class="detail-label">
+    Successful Launch:
+    <span class="detail-value">
+      {{details.launch_success ? "true" : "false"}}
+    </span>
+  </div>
+  <div class="detail-label">
+    Successful Landing:
+    <span class="detail-value">
+      {{details.land_success ? "true" : "false"}}
+    </span>
+  </div>
+</div>

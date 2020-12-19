@@ -1,0 +1,24 @@
+.app {
+  background-color: #f2f2f2;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  font-size: calc(22px + 2vmin);
+  color: #0a0a0a;
+  padding-left: 16px;
+}
+
+.link {
+  color: #61dafb;
+}
+
+.developers-name {
+  text-align: center !important;
+}
+
+.filter-button {
+  flex: 0 40%;
+  margin: 5px;
+}

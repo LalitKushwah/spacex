@@ -1,0 +1,39 @@
+.filter-card {
+    // width: 14rem;
+    margin-bottom: 15px;
+  }
+  
+  .filter-header {
+    color: #111111;
+  }
+  
+  .filter-heading {
+    text-align: center !important;
+    margin-top: 1rem;
+  }
+  
+  .filter-heading-launch-year {
+    text-align: center !important;
+    margin-top: -1rem;
+  }
+  
+  .filters-hr {
+    margin: 0.4rem;
+  }
+  
+  .filter-button-container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter-button {
+    flex: 0 40%;
+    margin: 5px;
+  }
+//   .year-btn-container {
+//       padding:30px;
+//   }
+  

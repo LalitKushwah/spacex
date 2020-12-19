@@ -1,0 +1,14 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+    background: url('../../assets/loader.gif') 
+                50% 50% no-repeat rgb(249,249,249);
+  }
+  .no-result {
+      display: flex;
+      justify-content: center;
+      height: 40vh;
+      align-items: center;
+  }
