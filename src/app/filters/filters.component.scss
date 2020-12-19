@@ -1,39 +1,47 @@
-.filter-card {
-    // width: 14rem;
-    margin-bottom: 15px;
-  }
-  
-  .filter-header {
-    color: #111111;
-  }
-  
-  .filter-heading {
-    text-align: center !important;
-    margin-top: 1rem;
-  }
-  
-  .filter-heading-launch-year {
-    text-align: center !important;
-    margin-top: -1rem;
-  }
-  
-  .filters-hr {
-    margin: 0.4rem;
-  }
-  
-  .filter-button-container {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: flex;
-    flex-wrap: wrap;
-  }
+.filter-header {
+  color: #111111;
+}
 
-  .filter-button {
-    flex: 0 40%;
-    margin: 5px;
+.filter-heading {
+  text-align: center !important;
+  margin-top: 1rem;
+}
+
+.filter-heading-launch-year {
+  text-align: center !important;
+  margin-top: -1rem;
+}
+
+.filters-hr {
+  margin: 0.4rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-button-wrapper {
+  display: flex;
+  justify-content: center;
+  flex: 1 0 34%;
+  width: 100%;
+}
+.filter-button {
+  cursor: pointer;
+}
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-weight: bold;
+}
+
+.btn-success {
+  background: rgba(113, 207, 59, 0.5);
+
+  &-active {
+    background: rgba(113, 207, 59, 1);
   }
-//   .year-btn-container {
-//       padding:30px;
-//   }
-  
+}

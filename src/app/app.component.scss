@@ -1,5 +1,7 @@
 .app {
   background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
 }
 
 .header {
@@ -18,7 +20,72 @@
   text-align: center !important;
 }
 
-.filter-button {
-  flex: 0 40%;
-  margin: 5px;
+// .filter-button {
+//   flex: 0 40%;
+//   margin: 5px;
+// }
+
+main {
+  padding: 1em;
+  max-width: 1440px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+
+  .row {
+    // display: flex; only in larger viewports
+    width: 100%;
+    
+    .filters, .launches {
+      margin-bottom: 2em;
+    }
+    
+    .filters {
+      padding: 1em;
+      background: #ffffff;
+      border-radius: 8px;
+    }
+  }
+
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+// This applies from 700px onwards
+@media (min-width: 700px) {
+  .row {
+    display: flex;
+  }
+
+  .filters {
+    width: calc(50% - 1em);
+    margin-right: 1em;
+  }
+
+  .launches {
+    width: calc(50% - 1em);
+    margin-left: 1em;
+  }
+}
+
+// This applies from 1024px onwards
+@media (min-width: 1024px) {
+  .row {
+    display: flex;
+  }
+
+  .filters {
+    width: calc(20%);
+    margin-right: 0;
+  }
+
+  .launches {
+    width: calc(80% - 1em);
+    margin-left: 1em;
+  }
 }

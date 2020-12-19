@@ -2,7 +2,7 @@
     <div class="loader" role="status" *ngIf="isLoading; else content"></div>
     <ng-template #content>
         <ng-container *ngIf="launches.length; else noresult">
-            <div class="col-md-12 col-lg-3" *ngFor="let details of launches">
+            <div class="launch-wrapper" *ngFor="let details of launches">
                 <app-launch [details]="details"></app-launch>
             </div>
         </ng-container>
@@ -12,5 +12,4 @@
             </div>
         </ng-template>
     </ng-template>
-
 </div>

@@ -12,3 +12,15 @@
       height: 40vh;
       align-items: center;
   }
+
+  // This applies from 1024px onwards
+@media (min-width: 1024px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .launch-wrapper{
+    width: calc(25% - 16px);
+    padding: 0 8px;
+  }
+}

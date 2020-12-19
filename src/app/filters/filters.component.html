@@ -1,14 +1,14 @@
 <div class="filter-card card">
     <div>
-        <h2 class="mx-auto my-2 text-center">Filters</h2>
-        <div class="filter-heading-launch-year text-center my-4">Launch Year
+        <h2 class="text-center">Filters</h2>
+        <div class="filter-heading-launch-year text-center">Launch Year
             <hr class="filters-hr" />
         </div>
         <div class="row">
-            <div class="filter-button btn btn-success-container" *ngFor="let year of LAUNCH_YEARS">
+            <div class="filter-button filter-button-wrapper btn btn-success-container" *ngFor="let year of LAUNCH_YEARS">
                 <button 
                     class="filter-button btn" 
-                    [ngClass]="filters['launch_year'] === transformToString(year) ? 'btn-success' : 'btn-outline-success'" 
+                    [ngClass]="filters['launch_year'] === transformToString(year) ? 'btn-success-active' : 'btn-success'" 
                     [value]="year" 
                     (click)="updateApiFilters('launch_year',$event)">
                     {{year}}
@@ -16,44 +16,53 @@
             </div>
         </div>
 
-        <div class="filter-heading text-center my-4">
+        <div class="filter-heading text-center">
             Successful Launch
             <hr class="filters-hr" />
         </div>
 
-        <div class="filter-button btn btn-success-container">
-            <button 
-            class="filter-button btn" 
-            [ngClass]="filters['launch_success'] === 'true' ? 'btn-success' : 'btn-outline-success'" 
-            (click)="updateApiFilters('launch_success',$event)" value="true">
-                True
-            </button>
-            <button 
-            class="filter-button btn" 
-            [ngClass]="filters['launch_success'] === 'false' ? 'btn-success' : 'btn-outline-success'"
-            (click)="updateApiFilters('launch_success',$event)" value="false">
-                False
-            </button>
+        <div class="row">
+            <div class="filter-button filter-button-wrapper btn btn-success-container">
+                <button 
+                class="filter-button btn" 
+                [ngClass]="filters['launch_success'] === 'true' ? 'btn-success-active' : 'btn-success'" 
+                (click)="updateApiFilters('launch_success',$event)" value="true">
+                    True
+                </button>
+            </div>
+            <div class="filter-button filter-button-wrapper btn btn-success-container">
+                <button 
+                class="filter-button btn" 
+                [ngClass]="filters['launch_success'] === 'false' ? 'btn-success-active' : 'btn-success'"
+                (click)="updateApiFilters('launch_success',$event)" value="false">
+                    False
+                </button>
+            </div>
         </div>
 
-        <div class="filter-heading text-center my-4">
+        <div class="filter-heading text-center">
             Successful Landing
             <hr class="filters-hr" />
         </div>
-        <div class="filter-button btn btn-success-container">
-            <button 
-                class="filter-button btn" 
-                [ngClass]="filters['land_success'] === 'true' ? 'btn-success' : 'btn-outline-success'" 
-                (click)="updateApiFilters('land_success', $event)" value="true">
-                True
-            </button>
+        
+        <div class="row">
+            <div class="filter-button filter-button-wrapper btn btn-success-container">
+                <button 
+                    class="filter-button btn" 
+                    [ngClass]="filters['land_success'] === 'true' ? 'btn-success-active' : 'btn-success'" 
+                    (click)="updateApiFilters('land_success', $event)" value="true">
+                    True
+                </button>
+            </div>
+            <div class="filter-button filter-button-wrapper btn btn-success-container">
+                <button 
+                    class="filter-button btn" 
+                    [ngClass]="filters['land_success'] === 'false' ? 'btn-success-active' : 'btn-success'" 
+                    (click)="updateApiFilters('land_success', $event)" value="false">
+                    False
+                </button>
+            </div>
 
-            <button 
-                class="filter-button btn" 
-                [ngClass]="filters['land_success'] === 'false' ? 'btn-success' : 'btn-outline-success'" 
-                (click)="updateApiFilters('land_success', $event)" value="false">
-                False
-            </button>
         </div>
     </div>
 </div>

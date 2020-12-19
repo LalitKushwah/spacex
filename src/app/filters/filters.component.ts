@@ -11,11 +11,10 @@ export class FiltersComponent implements OnInit {
 
   LAUNCH_YEARS = new Array(16).fill(0).map((_, index) => 2006 + index);
 
-  filters =  {};
+  filters: any =  {};
 
   constructor(private dataService: DataService) {
     this.filters = this.dataService.getAppliedFilters();
-    console.log(this.filters);
    }
 
   ngOnInit(): void {
@@ -24,12 +23,12 @@ export class FiltersComponent implements OnInit {
 
   updateApiFilters(type, event): any {
     const value = event.target.value;
+    console.log(this.filters);
     if (this.filters[type] === value) {
       return;
     }
     this.dataService.updateFilter(type, value);
     this.filters = this.dataService.getAppliedFilters();
-    console.log(this.filters);
   }
 
   transformToString(num): string {

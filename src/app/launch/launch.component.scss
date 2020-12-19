@@ -1,11 +1,19 @@
 .details-card {
-    text-align: center;
     padding: 1rem;
     margin-bottom: 15px;
+    background: #ffffff;
+    border-radius: 8px;
 
-    .mission-image {
-        background-color: #F2F2F2;
-    }    
+    .image {
+        width: 100%;
+        text-align: center;
+        img{
+            width: 100%;
+            max-width: 250px;
+            background-color: #F2F2F2;
+        }
+    }
+  
     .mission-name-flight-number {
         color: #63659f;
         font-size: 20px;

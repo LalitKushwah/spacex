@@ -10,7 +10,7 @@ import { Observable, Subject } from 'rxjs';
 
 export class DataService {
   filters = {};
-  private subject = new Subject<any>();
+  public subject = new Subject<any>();
 
   constructor(private http: HttpClient) {
     this.filters = {
