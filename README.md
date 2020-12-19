@@ -24,7 +24,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 
 ## Unit testing report
-  <img src="./assets/unit-testing-report.png" width="350" title="hover text">
+![Unit-Testing](https://github.com/LalitKushwah/spacex/blob/master/src/assets/unit-testing-report.png)
+
+## Lighthouse Report
+![Lighthouse](https://github.com/LalitKushwah/spacex/blob/master/src/assets/lighthouse-report.png)
 
 
 
