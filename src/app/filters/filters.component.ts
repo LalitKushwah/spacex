@@ -9,7 +9,7 @@ import { DataService } from '../../provider/data.service';
 })
 export class FiltersComponent implements OnInit {
 
-  LAUNCH_YEARS = new Array(16).fill(0).map((_, index) => 2006 + index);
+  LAUNCH_YEARS = new Array(15).fill(0).map((_, index) => 2006 + index);
 
   filters: any =  {};
 
